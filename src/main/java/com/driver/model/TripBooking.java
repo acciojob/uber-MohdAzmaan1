@@ -93,12 +93,12 @@ public class TripBooking {
         this.customer = customer;
     }
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn
     private Driver driver;
 
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn
     private Customer customer;
 }
